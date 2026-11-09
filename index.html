@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Only-Fan: ventiladores premium de torre, pared, techo y mesa. Envío en 48 horas y 3 años de garantía.">
+  <title>Only-Fan | Ventiladores premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="encabezado">
+    <div class="barra">
+      <a href="#inicio" class="logo">Only<span>-Fan</span></a>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#oferta">Ofertas</a></li>
+          <li><a href="#preguntas">Ayuda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones">
+        <form class="buscador" action="#productos" method="get">
+          <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </button>
+        </form>
+        <a href="#contacto" class="usuario" aria-label="Mi cuenta">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== INICIO (HERO + BUSCADOR) ========== -->
+    <section id="inicio">
+
+      <div class="ventilador" aria-hidden="true">
+        <div class="aspa"></div>
+        <div class="aspa"></div>
+        <div class="aspa"></div>
+        <div class="aspa"></div>
+        <div class="centro"></div>
+      </div>
+
+      <div class="hero-contenido">
+        <h1>Ventiladores<br>premium</h1>
+        <p class="hero-texto">
+          Queremos que tu compra sea fácil y sin complicaciones. Encuentra el ventilador ideal con nuestro
+          buscador, atención personalizada y entrega en 48 horas en las principales ciudades.
+        </p>
+      </div>
+
+      <!-- FORMULARIO 1: BUSCADOR / COTIZADOR -->
+      <form class="cotizador" action="#productos" method="get">
+        <div class="pestanas">
+          <label><input type="radio" name="uso" value="hogar" checked><span>Hogar</span></label>
+          <label><input type="radio" name="uso" value="oficina"><span>Oficina</span></label>
+          <label><input type="radio" name="uso" value="industrial"><span>Industrial</span></label>
+        </div>
+
+        <div class="campos">
+          <div class="campo-cot">
+            <label for="b-tipo">Tipo de ventilador</label>
+            <select id="b-tipo" name="tipo">
+              <option>Torre</option>
+              <option>Pared</option>
+              <option>Techo</option>
+              <option>Mesa</option>
+            </select>
+          </div>
+          <div class="campo-cot">
+            <label for="b-espacio">Tamaño del espacio</label>
+            <select id="b-espacio" name="espacio">
+              <option>Hasta 15 m²</option>
+              <option>15 a 30 m²</option>
+              <option>30 a 60 m²</option>
+              <option>Más de 60 m²</option>
+            </select>
+          </div>
+          <div class="campo-cot">
+            <label for="b-presupuesto">Presupuesto máximo</label>
+            <input type="number" id="b-presupuesto" name="presupuesto" placeholder="$ 250.000" min="0">
+          </div>
+          <div class="campo-cot">
+            <label for="b-ciudad">Ciudad de entrega</label>
+            <input type="text" id="b-ciudad" name="ciudad" placeholder="Ej: Bogotá">
+          </div>
+          <button type="submit" class="boton-buscar">Buscar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ========== CATEGORÍAS ========== -->
+    <section id="categorias" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-grande">Categorías</h2>
+        <div class="lista-categorias">
+          <a href="#productos" class="categoria">
+            <img src="images/categoria-torre.jpg" alt="Ventiladores de torre">
+            <h3>Torre</h3>
+            <span class="flecha">↗</span>
+          </a>
+          <a href="#productos" class="categoria">
+            <img src="images/categoria-pared.jpg" alt="Ventiladores de pared">
+            <h3>Pared</h3>
+            <span class="flecha">↗</span>
+          </a>
+          <a href="#productos" class="categoria">
+            <img src="images/categoria-techo.jpg" alt="Ventiladores de techo">
+            <h3>Techo</h3>
+            <span class="flecha">↗</span>
+          </a>
+          <a href="#productos" class="categoria">
+            <img src="images/categoria-mesa.jpg" alt="Ventiladores de mesa">
+            <h3>Mesa</h3>
+            <span class="flecha">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRODUCTOS EN TENDENCIA ========== -->
+    <section id="productos" class="seccion">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <h2 class="titulo-grande">Más vendidos</h2>
+          <a href="#contacto" class="boton boton-claro">Ver todo →</a>
+        </div>
+
+        <div class="lista-productos">
+          <article class="producto">
+            <h3>Torre Slim 40"</h3>
+            <p class="detalle">Torre · 3 velocidades · Control remoto</p>
+            <img src="images/ventilador2.jpg" alt="Ventilador de torre Slim 40">
+            <div class="pie-producto">
+              <p class="precio">$249.900</p>
+              <a href="#contacto" class="boton boton-borde">Comprar</a>
+            </div>
+          </article>
+
+          <article class="producto">
+            <h3>Pared Breeze 18"</h3>
+            <p class="detalle">Pared · Oscilación amplia</p>
+            <img src="images/ventilador3.jpg" alt="Ventilador de pared Breeze 18">
+            <div class="pie-producto">
+              <p class="precio">$129.900</p>
+              <a href="#contacto" class="boton boton-borde">Comprar</a>
+            </div>
+          </article>
+
+          <article class="producto">
+            <h3>Techo Sky LED</h3>
+            <p class="detalle">Techo · Luz LED incluida</p>
+            <img src="images/ventilador4.jpg" alt="Ventilador de techo Sky LED">
+            <div class="pie-producto">
+              <p class="precio">$349.900</p>
+              <a href="#contacto" class="boton boton-borde">Comprar</a>
+            </div>
+          </article>
+
+          <article class="producto">
+            <h3>Mesa Mini USB</h3>
+            <p class="detalle">Mesa · Compacto y recargable</p>
+            <img src="images/ventilador5.jpg" alt="Ventilador de mesa Mini USB">
+            <div class="pie-producto">
+              <p class="precio">$59.900</p>
+              <a href="#contacto" class="boton boton-borde">Comprar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VENTAJAS ========== -->
+    <section id="ventajas">
+      <div class="lista-ventajas">
+        <div class="ventaja">
+          <svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+          <p>Envío gratis en compras superiores a $150.000</p>
+        </div>
+        <div class="ventaja">
+          <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+          <p>3 años de garantía en todos los productos</p>
+        </div>
+        <div class="ventaja">
+          <svg viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg>
+          <p>Motores de bajo consumo y ultra silenciosos</p>
+        </div>
+        <div class="ventaja">
+          <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6.2"/><path d="M4 18v-5h5"/></svg>
+          <p>30 días para cambios y devoluciones</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BANNER DE OFERTA ========== -->
+    <section id="oferta">
+      <div class="contenedor oferta-interno">
+        <div class="oferta-texto">
+          <h2>Ventiladores de techo con gran descuento</h2>
+          <a href="#contacto" class="boton">Comprar ahora</a>
+        </div>
+        <div class="descuento">
+          <strong>50%</strong>
+          <span>Para todos los ventiladores de techo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PREGUNTAS FRECUENTES ========== -->
+    <section id="preguntas" class="seccion">
+      <div class="contenedor dos-columnas">
+        <div class="columna-chica">
+          <h2 class="titulo-grande">Preguntas frecuentes</h2>
+          <p class="texto-gris">¿No encuentras lo que buscas? Escríbenos y un asesor te ayuda.</p>
+          <a href="#contacto" class="boton">Hablar con un asesor</a>
+        </div>
+        <div class="columna-grande">
+          <details>
+            <summary>¿Cuánto tarda el envío?</summary>
+            <p>Entre 24 y 48 horas en las ciudades principales y hasta 5 días en el resto del país.</p>
+          </details>
+          <details>
+            <summary>¿Tienen garantía?</summary>
+            <p>Sí, todos los ventiladores incluyen 3 años de garantía por defectos de fábrica.</p>
+          </details>
+          <details>
+            <summary>¿Puedo devolver un producto?</summary>
+            <p>Sí, tienes 30 días para cambiarlo o devolverlo si no quedaste satisfecho.</p>
+          </details>
+          <details>
+            <summary>¿Qué formas de pago aceptan?</summary>
+            <p>Tarjetas de crédito y débito, transferencia bancaria y pago contraentrega.</p>
+          </details>
+          <details>
+            <summary>¿Instalan los ventiladores de techo?</summary>
+            <p>Sí, contamos con técnicos certificados. Solicítalo desde el formulario de contacto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMULARIO 2: CONTACTO ========== -->
+    <section id="contacto" class="seccion">
+      <div class="contenedor dos-columnas">
+        <div class="columna-chica">
+          <h2 class="titulo-grande">Contacto</h2>
+          <p class="texto-gris">Cuéntanos qué necesitas y te respondemos en menos de 24 horas.</p>
+          <ul class="info-contacto">
+            <li><strong>Dirección</strong><span>Calle 123 #45-67, Colombia</span></li>
+            <li><strong>Teléfono</strong><span>+57 300 000 0000</span></li>
+            <li><strong>Correo</strong><span>hola@only-fan.com</span></li>
+            <li><strong>Horario</strong><span>Lunes a sábado, 8:00 am a 6:00 pm</span></li>
+          </ul>
+        </div>
+
+        <div class="columna-grande">
+          <form class="formulario" action="#" method="get">
+            <div class="fila">
+              <div>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" class="campo" placeholder="Tu nombre" required>
+              </div>
+              <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" class="campo" placeholder="tu@correo.com" required>
+              </div>
+            </div>
+
+            <div class="fila">
+              <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="campo" placeholder="300 000 0000">
+              </div>
+              <div>
+                <label for="c-tipo">Tipo de ventilador</label>
+                <select id="c-tipo" name="tipo" class="campo">
+                  <option>Torre</option>
+                  <option>Pared</option>
+                  <option>Techo</option>
+                  <option>Mesa</option>
+                </select>
+              </div>
+            </div>
+
+            <label>¿Cómo prefieres que te contactemos?</label>
+            <div class="opciones">
+              <label><input type="radio" name="contacto" value="correo" checked> Correo</label>
+              <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+              <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label>
+            </div>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="campo" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+            <label class="acepto"><input type="checkbox" required> Acepto los términos y la política de privacidad</label>
+
+            <button type="submit" class="boton">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="pie">
+    <div class="contenedor">
+      <div class="columnas-pie">
+
+        <div class="col-pie col-boletin">
+          <a href="#inicio" class="logo">Only<span>-Fan</span></a>
+          <p class="boletin-titulo">Suscríbete al boletín</p>
+          <!-- FORMULARIO 3: BOLETÍN -->
+          <form class="boletin" action="#" method="get">
+            <input type="email" id="boletin" name="correo" placeholder="Tu correo" aria-label="Correo" required>
+            <button type="submit" aria-label="Suscribirme">→</button>
+          </form>
+        </div>
+
+        <div class="col-pie">
+          <h3>Tienda</h3>
+          <ul>
+            <li><a href="#categorias">Torre</a></li>
+            <li><a href="#categorias">Pared</a></li>
+            <li><a href="#categorias">Techo</a></li>
+            <li><a href="#categorias">Mesa</a></li>
+            <li><a href="#oferta">Ofertas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-pie">
+          <h3>Envíos a</h3>
+          <ul>
+            <li><a href="#contacto">Bogotá</a></li>
+            <li><a href="#contacto">Medellín</a></li>
+            <li><a href="#contacto">Cali</a></li>
+            <li><a href="#contacto">Barranquilla</a></li>
+            <li><a href="#contacto">Cartagena</a></li>
+          </ul>
+        </div>
+
+        <div class="col-pie">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            <li><a href="#preguntas">Garantía</a></li>
+            <li><a href="#preguntas">Devoluciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="barra-pie">
+        <p>© 2026 Only-Fan.</p>
+        <ul class="enlaces-pie">
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+        </ul>
+        <div class="redes">
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="X">x</a>
+          <a href="#" aria-label="Instagram">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
