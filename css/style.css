@@ -1,4 +1,3 @@
-
 /* =========================================
    1. CONFIGURACIÓN GENERAL
    ========================================= */
@@ -564,8 +563,7 @@ h1, h2, h3 {
   transition: 0.3s;
 }
 
-/* Efecto de selección */
-.producto:first-child,
+/* Efecto de selección: solo al pasar el cursor */
 .producto:hover {
   background: #dce7ff;
   border-color: #dce7ff;
@@ -708,6 +706,16 @@ h1, h2, h3 {
 .columna-grande {
   flex: 2;
   min-width: 320px;
+}
+
+/* Título más pequeño para que no invada las preguntas */
+#preguntas .titulo-grande {
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  overflow-wrap: break-word;
+}
+
+#preguntas .columna-chica {
+  min-width: 0;
 }
 
 /* Preguntas desplegables */
